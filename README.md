@@ -1,6 +1,7 @@
 # Local LLM with web ui
 
-Based on [Ollama](https://ollama.com) and [Docker](https://www.docker.com/). Required – make.
+Based on [Ollama](https://ollama.com) and [Docker](https://www.docker.com/). 
+Required – [make](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents).
 
 Most popular models – [ollama.com:popular](https://ollama.com/library?sort=popular)
 
@@ -8,6 +9,12 @@ Most popular models – [ollama.com:popular](https://ollama.com/library?sort=pop
 
 ```shell
 make help
+```
+
+## Containers build and run
+
+```shell
+make up
 ```
 
 ## Installed models
