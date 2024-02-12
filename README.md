@@ -1,6 +1,20 @@
 # Local LLM with web ui
 
-Most popular models - [ollama.com:popular](https://ollama.com/library?sort=popular )
+Based on [Ollama](https://ollama.com) and [Docker](https://www.docker.com/). Required – make.
+
+Most popular models – [ollama.com:popular](https://ollama.com/library?sort=popular)
+
+## Containers help
+
+```shell
+make help
+```
+
+## Installed models
+
+```shell
+make list
+```
 
 ## Run llama2 model
 
@@ -27,5 +41,7 @@ make run.codellama
 [Model](https://ollama.com/library/codellama) description.
 
 ## web ui
+
+Source – [ivanfioravanti/chatbot-ollama](https://github.com/ivanfioravanti/chatbot-ollama)
 
 [web-ui](http://127.0.0.1:3000)
