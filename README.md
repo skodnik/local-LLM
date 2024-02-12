@@ -45,9 +45,19 @@ make run
 make run.codellama
 ```
 
-[Model](https://ollama.com/library/codellama) description.
+[Model](https://ollama.com/library/llava) description.
+
+## Run llava model
+
+```shell
+make run.llava
+```
+
+[Model](https://ollama.com/library/llava) description.
 
 ## web ui
 
-1. [web-ui](http://127.0.0.1:3300) source – [ollama-webui/ollama-webui](https://github.com/ollama-webui/ollama-webui/tree/main)
-2. [chatbot](http://127.0.0.1:3000) source – [ivanfioravanti/chatbot-ollama](https://github.com/ivanfioravanti/chatbot-ollama)
+1. [web-ui](http://127.0.0.1:3300)
+   source – [ollama-webui/ollama-webui](https://github.com/ollama-webui/ollama-webui/tree/main)
+2. [chatbot](http://127.0.0.1:3000)
+   source – [ivanfioravanti/chatbot-ollama](https://github.com/ivanfioravanti/chatbot-ollama)

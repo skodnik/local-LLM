@@ -87,13 +87,31 @@ run.mistral: ## Run model mistral
 
 .PHONY: pull.codellama
 pull.codellama: ## Pull model codellama
-	docker-compose exec ollama ollama pull codellama
+	docker-compose exec ollama ollama pull codellama:7b-instruct
 
 .PHONY: rm.codellama
 rm.codellama: ## Remove model codellama
-	docker-compose exec ollama ollama rm codellama
+	docker-compose exec ollama ollama rm codellama:7b-instruct
 
 .PHONY: run.codellama
 run.codellama: ## Run model codellama
-	docker-compose exec -it ollama ollama run codellama
+	docker-compose exec -it ollama ollama run codellama:7b-instruct
+
+
+##############################################################################
+# llava                                                                      #
+# https://ollama.com/library/llava                                           #
+##############################################################################
+
+.PHONY: pull.llava
+pull.llava: ## Pull model llava
+	docker-compose exec ollama ollama pull llava
+
+.PHONY: rm.llava
+rm.llava: ## Remove model llava
+	docker-compose exec ollama ollama rm llava
+
+.PHONY: run.llava
+run.llava: ## Run model llava
+	docker-compose exec -it ollama ollama run llava
 
