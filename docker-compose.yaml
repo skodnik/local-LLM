@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+
+  # https://github.com/ivanfioravanti/chatbot-ollama/pkgs/container/chatbot-ollama
+  # https://github.com/ivanfioravanti/chatbot-ollama
+  webui:
+    container_name: webui
+    image: ghcr.io/ivanfioravanti/chatbot-ollama:main
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - DEFAULT_MODEL=llama2
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      - ollama
+
+  # https://hub.docker.com/r/ollama/ollama/tags
+  # https://ollama.ai/
+  ollama:
+    container_name: ollama
+    image: ollama/ollama:0.1.24
+    volumes:
+      - "./ollama/models:/ollama/models"
+    environment:
+      - OLLAMA_MODELS=/ollama/models
