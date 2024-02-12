@@ -1,6 +1,6 @@
 # Local LLM with web ui
 
-Based on [Ollama](https://ollama.com) and [Docker](https://www.docker.com/). 
+Based on [Ollama](https://ollama.com) and [Docker](https://www.docker.com/).
 Required – [make](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents).
 
 Most popular models – [ollama.com:popular](https://ollama.com/library?sort=popular)
@@ -49,6 +49,5 @@ make run.codellama
 
 ## web ui
 
-Source – [ivanfioravanti/chatbot-ollama](https://github.com/ivanfioravanti/chatbot-ollama)
-
-[web-ui](http://127.0.0.1:3000)
+1. [web-ui](http://127.0.0.1:3300) source – [ollama-webui/ollama-webui](https://github.com/ollama-webui/ollama-webui/tree/main)
+2. [chatbot](http://127.0.0.1:3000) source – [ivanfioravanti/chatbot-ollama](https://github.com/ivanfioravanti/chatbot-ollama)
